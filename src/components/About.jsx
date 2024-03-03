@@ -5,6 +5,8 @@ import { styles } from "../style";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { staggerContainer } from "../utils/motion";
+import { Link } from "react-router-dom";
+import { github } from "../assets";
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
@@ -51,11 +53,18 @@ const About = () => {
         JavaScript, I'm eager to embark on this exciting journey of crafting
         visually appealing and user-friendly websites.
       </motion.p>
-      <div className="flex gap-10 flex-wrap mt-20 ">
+      <div className="flex gap-10 flex-wrap mt-20 mb-20 ">
         {services.map((services, index) => (
           <ServiceCard key={services.title} index={index} {...services} />
         ))}
       </div>
+      <a
+        href={github}
+        download="Atish Fulzade.pdf"
+        className="bg-tertiary  py-3 px-8 outline-none border-none font-bold text-white shadow-lg w-fit shadow-primary rounded-lg "
+      >
+        Download Resume
+      </a>
       <span className="hash-span">&nbsp;</span>
     </motion.section>
   );
