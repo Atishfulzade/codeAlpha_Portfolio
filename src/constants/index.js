@@ -23,6 +23,10 @@ import {
   jobit,
   tripguide,
   threejs,
+  instagram,
+  github,
+  linkedin,
+  facebook,
 } from "../assets";
 
 const services = [
@@ -88,7 +92,28 @@ const technologies = [
     icon: figma,
   },
 ];
-
+const social = [
+  {
+    name: "Github",
+    icon: github,
+    link: "https://github.com/Atishfulzade",
+  },
+  {
+    name: "Linkedin",
+    icon: linkedin,
+    link: "https://linkedin.com/in/atishfulzade",
+  },
+  {
+    name: "Instagram",
+    icon: instagram,
+    link: "https://instagram.com/atishfulzade",
+  },
+  {
+    name: "Facebook",
+    icon: facebook,
+    link: "https://www.facebook.com/atish.fulzade.9/",
+  },
+];
 const experiences = [
   {
     title: "React.js Developer",
@@ -237,4 +262,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, social };

@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { styles } from "../style.js";
+import { social } from "../constants/index.js";
 import {
   logo,
   menu,
@@ -11,7 +12,6 @@ import {
   facebook,
 } from "../assets";
 const Navbar = () => {
-  const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   return (
     <nav
@@ -154,34 +154,15 @@ const Navbar = () => {
               Follow me on
             </h3>
             <div className="flex h-20 gap-2 mt-5">
-              <Link to="https://atishfulzade.com">
-                <img
-                  src={github}
-                  alt="github"
-                  className="h-10 w-10 cursor-pointer"
-                />
-              </Link>
-              <Link to="https://atishfulzade.com">
-                <img
-                  src={linkedin}
-                  alt="linkedin"
-                  className="h-10 w-10 cursor-pointer"
-                />
-              </Link>
-              <Link to="https://atishfulzade.com">
-                <img
-                  src={instagram}
-                  alt="instagram"
-                  className="h-10 w-10 cursor-pointer"
-                />
-              </Link>
-              <Link to="https://atishfulzade.com">
-                <img
-                  src={facebook}
-                  alt="facebook"
-                  className="h-10 w-10 cursor-pointer"
-                />
-              </Link>
+              {social.map((site) => (
+                <Link to={site.link} key={site.name}>
+                  <img
+                    src={site.icon}
+                    alt={site.name}
+                    className="h-6 w-6 cursor-pointer"
+                  />
+                </Link>
+              ))}
             </div>
           </div>
         </div>
