@@ -35,29 +35,27 @@ const Contact = () => {
         },
         "x9g--AzI31sD6cCnF"
       )
-      .then(
-        () => {
-          setLoading(false);
-          toast("Message send sucessfully!", {
-            style: {
-              borderRadius: "10px",
-              background: "#333",
-              color: "#fff",
-            },
-          });
-          setForm({ name: "", email: "", message: "" });
-        },
-        (error) => {
-          setLoading(false);
-          toast.error("Something went wrong ", {
-            style: {
-              borderRadius: "10px",
-              background: "#333",
-              color: "#fff",
-            },
-          });
-        }
-      );
+      .then(() => {
+        setLoading(false);
+        toast("Message send sucessfully!", {
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
+        setForm({ name: "", email: "", message: "" });
+      })
+      .catch((error) => {
+        setLoading(false);
+        toast.error("Something went wrong ", {
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
+      });
   };
   return (
     <motion.section
@@ -67,8 +65,8 @@ const Contact = () => {
       viewport={{ once: true, amount: 0.25 }}
       className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
     >
+      <Toaster position="bottom-left" reverseOrder={false} />
       <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 w-full overflow-hidden">
-        <Toaster position="top-center" reverseOrder={false} />
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
           className="flex-[0.75] bg-black-100 p-8 rounded-2xl "

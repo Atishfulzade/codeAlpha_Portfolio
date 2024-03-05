@@ -30,7 +30,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute  xs:bottom-10 bottom-10 w-full flex justify-center items-start p-2">
+      <div className="absolute  xs:bottom-10 bottom-11 w-full flex justify-center items-start p-2">
         <div
           onClick={() => {
             scrollTo(0, 650);

@@ -19,25 +19,24 @@ import errorImage from "./error.webp";
 import javascript from "./tech/javascript.webp";
 import mongodb from "./tech/mongodb.webp";
 import nodejs from "./tech/nodejs.webp";
+import whiteFusionboard from "./WhiteboardFusion.webp";
 import reactjs from "./tech/reactjs.webp";
 import redux from "./tech/redux.webp";
 import tailwind from "./tech/tailwind.webp";
 import typescript from "./tech/typescript.webp";
 import threejs from "./tech/threejs.svg";
-
-import meta from "./company/meta.webp";
-import shopify from "./company/shopify.webp";
-import starbucks from "./company/starbucks.webp";
-import tesla from "./company/tesla.webp";
+import textEditor from "./Texteditor.webp";
+import codealpha from "./company/codealpha.webp";
 import earth from "./earth.webp";
-import carrent from "./carrent.webp";
-import jobit from "./jobit.webp";
-import tripguide from "./tripguide.webp";
+import resume from "./Atish Fulzade.pdf";
 
 export {
   logo,
+  resume,
   errorImage,
+  whiteFusionboard,
   backend,
+  textEditor,
   creator,
   mobile,
   web,
@@ -62,11 +61,5 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  codealpha,
 };

@@ -43,7 +43,7 @@ const ProjectCard = ({ project }) => {
               className="black-gradient w-10 h-10 rounded-full justify-center flex items-center cursor-pointer"
               title="Deploy link"
               onClick={() => {
-                window.open(project.source_code_link, "_blank");
+                window.open(project.deploy_link, "_blank");
               }}
             >
               <img src={browser} alt="browser" className="w-3/4 h-3/4 " />
@@ -52,7 +52,7 @@ const ProjectCard = ({ project }) => {
         </div>
         <div className="mt-5">
           <h3 className="font-bold text-white text-[24px]">{project.name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">
+          <p className="mt-2 text-secondary text-[14px] line-clamp-4 hover:line-clamp-none">
             {project.description}
           </p>
         </div>

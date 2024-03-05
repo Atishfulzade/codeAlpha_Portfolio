@@ -5,8 +5,7 @@ import { styles } from "../style";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { staggerContainer } from "../utils/motion";
-import { Link } from "react-router-dom";
-import { github } from "../assets";
+import { github, resume } from "../assets";
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
@@ -59,7 +58,7 @@ const About = () => {
         ))}
       </div>
       <a
-        href={github}
+        href={resume}
         download="Atish Fulzade.pdf"
         className="bg-tertiary  py-3 px-8 outline-none border-none font-bold text-white shadow-lg w-fit shadow-primary rounded-lg "
       >
