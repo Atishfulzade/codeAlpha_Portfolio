@@ -8,6 +8,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import browser from "./browser.webp";
 import css from "./tech/css.webp";
+import resumebuilder from "./resumebuilder.webp";
 import docker from "./tech/docker.webp";
 import linkedin from "./linkedin.webp";
 import facebook from "./facebook.webp";
@@ -39,6 +40,7 @@ export {
   textEditor,
   creator,
   mobile,
+  resumebuilder,
   web,
   github,
   menu,

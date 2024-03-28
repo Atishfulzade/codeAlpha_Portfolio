@@ -217,3 +217,55 @@
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
 }
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 55px;
+  aspect-ratio: 1;
+  --g1: conic-gradient(from 90deg at 3px 3px, #0000 90deg, #fff 0);
+  --g2: conic-gradient(from -90deg at 22px 22px, #0000 90deg, #fff 0);
+  background: var(--g1), var(--g1), var(--g1), var(--g2), var(--g2), var(--g2);
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  animation: l7 1.5s infinite;
+}
+@keyframes l7 {
+  0% {
+    background-position: 0 0, 0 100%, 100% 100%;
+  }
+  25% {
+    background-position: 100% 0, 0 100%, 100% 100%;
+  }
+  50% {
+    background-position: 100% 0, 0 0, 100% 100%;
+  }
+  75% {
+    background-position: 100% 0, 0 0, 0 100%;
+  }
+  100% {
+    background-position: 100% 100%, 0 0, 0 100%;
+  }
+}
+.upperpage {
+  transition: cubic-bezier(0.56, 0.1, 0.21, 0.48);
+  animation: pagetop 3s;
+}
+@keyframes pagetop {
+  0% {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    rotate: 0deg;
+  }
+  25% {
+    top: -10px;
+    left: 0;
+    opacity: 1;
+    rotate: 0deg;
+  }
+  100% {
+    top: -1000px;
+    left: -100px;
+    opacity: 0;
+    rotate: -10deg;
+  }
+}

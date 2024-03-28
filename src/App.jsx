@@ -7,15 +7,30 @@ import {
   Navbar,
   Tech,
   Works,
+  Loader,
 } from "./components";
 import Error from "./components/Error";
+import { useEffect, useState } from "react";
 
 const App = () => {
+  const [isAppLoading, setIsAppLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsAppLoading(false);
+    }, 1000);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
+
   return (
     <div className="relative z-[0] bg-primary scroll-smooth">
       <div className="bg-primary-pattern bg-cover bg-no-repeat bg-center">
         <Navbar />
         <div className="container">
+          {isAppLoading && <Loader />}
           <Routes>
             <Route path="/" element={<DefaultRoute />} />
             <Route path="/about" element={<About />} />

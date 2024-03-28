@@ -20,6 +20,7 @@ import {
   facebook,
   codealpha,
   textEditor,
+  resumebuilder,
 } from "../assets";
 
 const services = [
@@ -125,9 +126,9 @@ const experiences = [
 
 const projects = [
   {
-    name: "Text editor",
+    name: "Resume builder",
     description:
-      " I developed a text editor using Draft.js, enhancing it with various formatting options and block-level editing functionalities and saving the work in localstorage",
+      "This interactive resume builder lets you craft impactful resumes in minutes. Built with React, Redux, and Tailwind CSS, it offers a seamless experience, stunning designs, and downloadable formats  ",
     tags: [
       {
         name: "react",
@@ -135,13 +136,18 @@ const projects = [
       },
 
       {
+        name: "redux",
+        color: "green-text-gradient",
+      },
+
+      {
         name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: textEditor,
-    source_code_link: "https://github.com/Atishfulzade/text-editor.git",
-    deploy_link: "https://rmqqsd-5173.csb.app/",
+    image: resumebuilder,
+    source_code_link: "https://github.com/Atishfulzade/resume_builder.git",
+    deploy_link: "https://resume-builder-blush-beta.vercel.app/",
   },
 
   {
