@@ -18,7 +18,7 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsAppLoading(false);
-    }, 1000);
+    }, 3000);
 
     return () => {
       clearTimeout(timer);
@@ -26,7 +26,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="relative z-[0] bg-primary scroll-smooth">
+    <div className="relative z-[0] bg-[#050816] scroll-smooth">
       <div className="bg-primary-pattern bg-cover bg-no-repeat bg-center">
         <Navbar />
         <div className="container">

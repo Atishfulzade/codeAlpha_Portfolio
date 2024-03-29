@@ -247,25 +247,25 @@
 }
 .upperpage {
   transition: cubic-bezier(0.56, 0.1, 0.21, 0.48);
-  animation: pagetop 3s;
+  animation: pagetop 2s;
 }
 @keyframes pagetop {
   0% {
     top: 0;
     left: 0;
-    opacity: 1;
+
     rotate: 0deg;
   }
-  25% {
-    top: -10px;
+  65% {
+    top: 0px;
     left: 0;
-    opacity: 1;
+
     rotate: 0deg;
   }
   100% {
     top: -1000px;
     left: -100px;
-    opacity: 0;
+
     rotate: -10deg;
   }
 }
