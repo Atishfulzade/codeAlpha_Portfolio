@@ -16,30 +16,32 @@ import instagram from "./instagram.webp";
 import figma from "./tech/figma.webp";
 import git from "./tech/git.webp";
 import html from "./tech/html.webp";
+import chatbot from "./chatbot.webp";
 import errorImage from "./error.webp";
 import javascript from "./tech/javascript.webp";
 import mongodb from "./tech/mongodb.webp";
 import nodejs from "./tech/nodejs.webp";
-import whiteFusionboard from "./WhiteboardFusion.webp";
 import reactjs from "./tech/reactjs.webp";
 import redux from "./tech/redux.webp";
 import tailwind from "./tech/tailwind.webp";
 import typescript from "./tech/typescript.webp";
 import threejs from "./tech/threejs.svg";
-import textEditor from "./Texteditor.webp";
 import codealpha from "./company/codealpha.webp";
 import earth from "./earth.webp";
-import resume from "./Atish Fulzade.pdf";
+import resume from "./Atish_Fulzade_resume.pdf";
+import playtube from "./playtube.webp";
+import meeshio from "./meeshio.webp";
 
 export {
   logo,
   resume,
   errorImage,
-  whiteFusionboard,
+  meeshio,
+  playtube,
   backend,
-  textEditor,
   creator,
   mobile,
+  chatbot,
   resumebuilder,
   web,
   github,

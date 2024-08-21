@@ -13,14 +13,14 @@ import {
   mongodb,
   git,
   figma,
-  whiteFusionboard,
   instagram,
   github,
   linkedin,
   facebook,
   codealpha,
-  textEditor,
   resumebuilder,
+  playtube,
+  meeshio,
 } from "../assets";
 
 const services = [
@@ -126,6 +126,62 @@ const experiences = [
 
 const projects = [
   {
+    name: "PlayTube",
+    description:
+      "PlayTube is a React project inspired by the popular YouTube video application. This project showcases features such as video listing, playback, login, signup, video watchlist, and video recommendations.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "green-text-gradient",
+      },
+      {
+        name: "api",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: playtube,
+    source_code_link: "https://github.com/Atishfulzade/playtube.git",
+    deploy_link: "https://playtubevid.netlify.app/",
+  },
+  {
+    name: "Meeshio",
+    description:
+      "Meeshio is a clone of the popular e-commerce platform Meesho. The application is designed to provide users with a seamless online shopping experience, featuring product listings, cart management, user authentication, and more.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: meeshio,
+    source_code_link: "https://github.com/Atishfulzade/meeshio.git",
+    deploy_link: "https://meeshio.vercel.app/",
+  },
+  {
     name: "Resume builder",
     description:
       "This interactive resume builder lets you craft impactful resumes in minutes. Built with React, Redux, and Tailwind CSS, it offers a seamless experience, stunning designs, and downloadable formats  ",
@@ -148,33 +204,6 @@ const projects = [
     image: resumebuilder,
     source_code_link: "https://github.com/Atishfulzade/resume_builder.git",
     deploy_link: "https://resume-builder-blush-beta.vercel.app/",
-  },
-
-  {
-    name: "WhiteBoardFusion",
-    description:
-      "A collaborative whiteboard application that enables real-time drawing and annotation. implemented features for seamless collaboration and interactive drawing experiences with login,register with authentication",
-    tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: whiteFusionboard,
-    source_code_link: "https://github.com/Atishfulzade/whitefusionboard.git",
-    deploy_link: "https://whitefusionboard-lp2g.vercel.app/",
   },
 ];
 

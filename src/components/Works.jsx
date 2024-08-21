@@ -92,11 +92,17 @@ const Works = () => {
           projects effectively.
         </motion.p>
       </div>
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 mb-10 flex flex-wrap gap-7">
         {projects.map((project) => (
           <ProjectCard project={project} key={project.name} />
         ))}
       </div>
+      <a
+        href="https://github.com/Atishfulzade/"
+        className="bg-tertiary  py-3 px-8  outline-none border-none font-bold text-white shadow-lg w-fit shadow-primary rounded-lg "
+      >
+        View all projects on Github
+      </a>
       <span className="hash-span">&nbsp;</span>
     </motion.section>
   );
